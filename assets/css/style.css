@@ -1,0 +1,281 @@
+html {
+    font-family: sans-serif;
+}
+.container {
+    padding-right: 3%;
+    padding-left: 3%;
+    overflow: hidden;
+}
+/* start header */
+
+.header-topbr {
+    background-color: #ffff;
+}
+.rs-logo  a img {
+    height: 35px;
+    margin: 10px 0;
+}
+.rs-contact .name {
+    font-weight: bold;
+    line-height: 23px;
+}
+.skype {
+    
+    background-image: url(./../image/zalo.png);
+    width: 23px;
+    height: 23px;
+    background-size: 100%;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.mobile {
+    
+    border-left: 1px solid grey;
+    padding-left: 10px;
+    color: #333;
+}
+.skype-fb {
+    display: block;
+    background-image: url(./../image/facebook.png);
+    width: 23px;
+    height: 23px;
+    background-size: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.rs-navbar {
+    background-color: #141414;
+    border-bottom: 2px solid #000;
+}
+
+.fa-house {
+    color: #ffc341;
+    width: 22px;
+    height: 25px;
+    
+}
+.fa-cart-shopping {
+    color: #ffff;
+    font-size: 15px;
+    position: relative;
+    padding: 20px;
+    background-color: #000;
+}
+.search {
+    width: 130px;
+    background-color: #ffc341;
+    color: #000;
+    font-size: 14px;
+    height: 55px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    transition: width 0.3s ease;
+}
+.search:focus {
+    width: 250px;
+}
+.search::placeholder {
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.sty-navbar-a:hover {
+    color: #ffc341;
+}
+
+/* End header */
+/* start body */
+.body-page {
+    padding-top: 10px;
+}
+.vc-row-item {
+    padding: 5px;
+}
+.vc-row-inner {
+    width: 100%;
+    height: 260px;
+   
+}
+.vc-img1 {
+    
+    background-image: url(http://runningstore.vn/wp-content/uploads/2020/04/store-running.jpg?id=9899) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-img2 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2016/02/12353380_1650844908500875_1677437000_n.jpg?id=7354) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; 
+}
+.vc-img3 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2020/04/Nike-running.jpg?id=9902) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-img4 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2020/04/Adidas-boost.jpg?id=9898);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-img5 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2020/04/pegasus.jpg?id=9900);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-img6 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2016/02/3.jpg?id=7360);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-img7 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2018/12/trainning.jpg?id=8734);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-img8 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2016/01/giay-nam.jpg?id=7010);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-img9 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2016/02/competition-background1.jpg?id=7362);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-img10 {
+    background-image: url(http://runningstore.vn/wp-content/uploads/2016/02/sales_poster.jpg?id=7364);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.vc-item-inner {
+    position: relative;
+    height: 100%;
+}
+
+
+.wpd-wrapper {
+    width: 100%;
+    
+    position: absolute;
+    color: #ffff;
+    left: 0;
+    text-align: center;
+    top: 0;
+    top: calc(100% - 5em);
+    -webkit-transition: all 0.615s cubic-bezier(0.19, 1, 0.22, 1); 
+    transition: all 0.615s cubic-bezier(0.19, 1, 0.22, 1);
+    padding: 15px;
+    
+    
+}
+.wpd-wrapper-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.wpd-text {
+    padding-bottom: 18px;
+    border-bottom: 2px solid #ffff;
+}
+
+.vc-row-item:hover .wpd-wrapper{
+    top: 20%;
+    
+}
+.vc-row-item:hover .item-inner{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.7;
+    color: #ffff;
+   
+}
+
+.wpd-wrapper-bg {
+    width: 100%;
+    background-image: url(http://runningstore.vn/wp-content/uploads/2020/04/Nike-running.jpg?id=9902);
+}
+/* End body-page */
+/* star footer */
+.row-footer {
+    margin-top: 45px;
+    background-color: #191919;
+}
+.textwidget {
+    width: 30%;
+    color: #ffff;
+}
+
+.rs-icons li a {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 12px;
+}
+.input-gmail {
+    display: flex;
+    color: #000;
+    margin-top: 25px;
+
+}
+.input-gmail input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    font-size: 12px;
+}
+.fa-envelope {
+    margin-left: -35px;
+}
+.menu-ft li a {
+    padding: 8px 0;
+    display: block;
+    color: #fff;
+}
+.nav-menu1 {
+    width: calc(40% / 3);
+    padding: 0 15px;
+}
+.textwidget iframe {
+    padding-bottom: 40px;
+    background-color: #fff;
+}
+.footer-inner-t {
+    padding: 45px 0;
+}
+.ft-hr {
+    border-bottom: 1px solid #272727
+}
+.footer-inner-b {
+    padding: 15px 0;
+}
+.footer-inner-b p {
+    text-align: center;
+    color: #fff;
+}
