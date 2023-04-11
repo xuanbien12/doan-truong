@@ -5,11 +5,11 @@ $(document).ready(function(){
         if(scrollPosition > 10){
             $("header").addClass("site-header")
             $(".rs-navbar-b").css('display','none')
-            
+            $(".search").addClass("d-n")
         }else {
             $("header").removeClass("site-header")
             $(".rs-navbar-b").css('display','block')
-            
+            $(".search").removeClass("d-n")
         }
     });
     
