@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./../../assets/css/commom.css">
     <link rel="stylesheet" href="./../../assets/css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../../assets/css/responsive.css">
+    <link rel="stylesheet" href="./../../shop/responsive.css">
 </head>
 <body>
     <div class="page">
@@ -20,7 +22,9 @@
                 <div class="container">
                     <div class="row-h dl-fl-between">
                         <div class="rs-logo col-lr-1">
+                            <span class="rp-bars-st rp-hdr" href=""><i class="fa-solid fa-bars"></i></span>
                             <a href="./../../index.html"><img src="https://runningstore.vn/wp-content/uploads/2016/02/Running-store-logo_final_black_-180x60.png" alt=""></a>
+                            <a class="rp-cart-shopping rp-hdr" href=""><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                         <div class="rs-contact col-lr-1">
                             <ul class="dl-fl" >
@@ -37,6 +41,9 @@
                                 
                             </ul>
                         </div>
+                        <div class="nav-navbar1">
+                            <input type="text" name="input" class="search" value="" placeholder="tìm kiếm">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,18 +51,37 @@
                 <div class="container">
                     <div class="rs-navbar-inner dl-fl-between">
                         <div class="navbar-list">
-                            <ul class="dl-fl">
+                            <ul class="dl-fl navbar-list-inner">
                                 <li><a  href="./../../index.html">
                                     <i class="fa-solid fa-house"></i>
                                 </a></li>
                                 <li><a class="sty-navbar-a " href="./../../shop/index.html"><span>Sản Phẩm </span></a></li>
-                                <li><a class="sty-navbar-a bg-product" href="./adidas.html"><span>adidas</span></a></li>
+                                <li><a class="sty-navbar-a bg-product" href="./../adidas/adidas.html"><span>adidas</span></a></li>
                                 <li><a class="sty-navbar-a" href="./../nike/nike.html"><span>nike</span></a></li>
                                 <li><a class="sty-navbar-a" href="./../asics/asics.html"><span>asics</span></a></li>
                                 <li><a class="sty-navbar-a" href=""><span>blog</span></a></li>
-                                <li><a class="sty-navbar-a bg-outlet" href="./../../outlet/index.html"><span>outlet</span></a></li>
+                                <li><a class="sty-navbar-a bg-outlet" href="./../../index.html"><span>outlet</span></a></li>
                             </ul>
+                                <h3 class="rp-navbar-list">Danh mục <span class="rp-bars-st rp-hdr" href=""><i class="fa-solid fa-bars"></i></span></h3>
+                            <div class="list-rp show-list">
+                            <div class="list-rp-main">
+                                <ul class=" list-rp-inner ">
+                                    <h2 class="sty-navbar-a">meune</h2>
+                                    <li><a class="sty-navbar-a"  href="./index.html">
+                                        <i class="fa-solid fa-house"></i>
+                                    </a></li>
+                                    <li><a class="sty-navbar-a " href="./../../shop/index.html"><span>Sản Phẩm </span></a></li>
+                                    <li><a class="sty-navbar-a bg-l" href="./../adidas/adidas.html"><span>adidas</span></a></li>
+                                    <li><a class="sty-navbar-a" href="./../nike/nike.html"><span>nike</span></a></li>
+                                    <li><a class="sty-navbar-a" href="./../asics/asics.html"><span>asics</span></a></li>
+                                    <li><a class="sty-navbar-a" href=""><span>blog</span></a></li>
+                                    <li class="bg-outlet"><a class="sty-navbar-a" href="./../../index.html"><span>outlet</span></a></li>
+                                </ul>
+                                <span class="xmark" href=""><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                            </div>
                         </div>
+                        
                         <div class="nav-navbar">
                             <ul class="dl-fl">
                                 <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -71,6 +97,7 @@
                 <div class="container">
                    <div class="navbar-b-inner"> 
                         <a href="./../index.html">Trang chủ</a>
+                        <span class="delimiter"><i class="fa-solid fa-caret-right"></i></span>
                         
                     </div>
                 </div>
@@ -164,7 +191,7 @@
                         <ul class="products">
                            
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product4.html">
                                     <span class="brand">ADIDAS</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2023/02/z4121328912650_3a8d576abf3686df7257a1875c11cd72-430x430.jpg" alt="">
                                     <h2 class="product-item-title">Adidas SL20.3 – Core Black/Cloud White/Grey Two – GY0558</h2>
@@ -177,7 +204,7 @@
                                 </a>
                             </li>
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product5.html">
                                     <span class="brand">ADIDAS</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2023/02/z4121316364574_df464ce575b5397847f35161a8a67c76-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas SL20.3 – Carbon / Sandy Beige Met / Turbo – H01122</h2>
@@ -191,7 +218,7 @@
                             </li>
                             
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product16.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2023/01/adidas-Solar-Control-Gx9220-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Solar Control – Shadow Navy / Cloud White / Altered Blue – GX9220 màu Navy</h2>
@@ -205,7 +232,7 @@
                             </li>
 
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product17.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2023/01/Adidas-runfalcon-f36200-mau-den-430x430.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Runfalcon – Grey Six / Cloud White / Core Black – F36200</h2>
@@ -219,7 +246,7 @@
                             </li>
                             
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product26.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2023/04/z4245398283495_32d0532a6ace3670463d84c063c7c1dd-150x150.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Galaxy 6 –  Halo Silver / Carbon / Cloud White – GW4140 – xám</h2>
@@ -232,7 +259,7 @@
                                 </a>
                             </li>
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product6.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2021/05/z4114163199322_88e04dea3c3bac1bc51ad7e08793fcb9-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas adizero RC 5 – Cloud White / Lucid Blue / Core Black – GV9096</h2>
@@ -246,7 +273,7 @@
                             </li>
 
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product27.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2022/03/91f7480d87f14baf12e0-100x100.jpg" alt="">
                                     <h2 class="product-item-title">Adidas PureBoost 21 – Cloud White / Core Black / Solar Red – GY5099 – màu trắng</h2>
@@ -260,7 +287,7 @@
                             </li>
 
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product28.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2022/10/77c2c09f194ede10875f-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Duramo SL – Core Black / Core Black / Grey Six – FY8113 màu đen</h2>
@@ -273,7 +300,7 @@
                                 </a>
                             </li>
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product29.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2022/10/d4c36eaf3292f5ccac83-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Galaxy 4 – Grey Five / Grey Five / Grey Five – F36162 – xám</h2>
@@ -286,7 +313,7 @@
                                 </a>
                             </li>
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product30.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2022/10/7027ed7c084ecf10965f-430x430.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Duramo 9 – Core Black / Core White / Core Black – BB7066 – đen</h2>
@@ -299,7 +326,7 @@
                                 </a>
                             </li>
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product31.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2022/10/aa54b10e543c9362ca2d-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Duramo 9 – Tech Indigo / Legend Ink / Footwear White – EG8661 tím than</h2>
@@ -313,7 +340,7 @@
                             </li>
 
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product32.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2022/11/6845f9b9c88b0fd5569a-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Ultraboost 21 Triple Black – Core Black – FY0306 màu đen</h2>
@@ -326,7 +353,7 @@
                                 </a>
                             </li>
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product33.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2022/07/c8700de33933fb6da222-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Solarboost 3 – Halo Silver / Signal Green / Sonic – S42995</h2>
@@ -339,7 +366,7 @@
                             </li>
 
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product34.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2022/03/4ac2c26e84ad4bf312bc-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adidas Ultraboost 21 –  Vivid Red / Solar Red / Core Black – FY0387</h2>
@@ -352,7 +379,7 @@
                             </li>
 
                             <li class="product-item">
-                                <a href="">
+                                <a href="./../../product/product35.html">
                                     <span class="brand">adidas</span>
                                     <img class="product-item-img" src="https://runningstore.vn/wp-content/uploads/2021/12/DSC02101_1_1866-300x300.jpg" alt="">
                                     <h2 class="product-item-title">Adiddas Adizero Boston 10 W – Cloud White / Core Black / Solar Red – FY4080</h2>

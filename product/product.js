@@ -1,7 +1,7 @@
 $(document).ready(function(){
     window.addEventListener("scroll", function() {
         var scrollPosition = window.scrollY;
-        if(scrollPosition > 10){
+        if(scrollPosition > 10 ){
             $("header").addClass("site-header")
             $(".rs-navbar-b").css('display','none')
             $(".search").addClass("d-n")
@@ -10,8 +10,9 @@ $(document).ready(function(){
             $(".rs-navbar-b").css('display','block')
             $(".search").removeClass("d-n")
         }
+        
     });
-    
+      
     $(".toggle1").on("click" , function(){
         $(".toggle1-perform").toggle()
     })
@@ -27,6 +28,35 @@ $(document).ready(function(){
     $(".toggle5").on("click" , function(){
         $(".toggle5-perform").toggle()
     })
+    const textProduct = $(".prodcut-title").text()
+    
+    $(".name-tab").text(textProduct)
+    $(".up").on("click", function(){
+        const counter = $(".iput-nb").attr("value")
+        let newcounter = (+counter) + 1 
+        $(".iput-nb").attr("value", newcounter)
+        console.log("aaa")
+    })
+    $(".down").on("click", function(){
+        const counter = $(".iput-nb").attr("value")
+        let newcounter = (+counter) - 1
+       if(newcounter >= 1){
+        
+        $(".iput-nb").attr("value", newcounter)
+       }
+        
+    })
+    $(".active").on("click", function(){
+        $(".active").css("backgroud", "black")
+       
+    })
+    
+    $('.slick-products').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow:`<button type='button' class='slick-prev pull-left slick-arrow '><i class="fa-solid fa-arrow-left"></i></button>`,
+        nextArrow:`<button type='button' class='slick-next pull-right slick-arrow '><i class="fa-solid fa-arrow-right"></i></button>`,
+    });
     $(".rp-bars-st").on("click",function(){
         $(".show-list").css("left","0")
         $(".xmark").css("right","0")
@@ -34,4 +64,5 @@ $(document).ready(function(){
    $(".xmark").on("click", function(){
        $(".show-list").css("left","-100%")
    })
+  
 })

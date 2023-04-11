@@ -40,6 +40,7 @@
 .vc_col-sm-2 {
     width: 50%;
 }
+
 .pd {
     padding: 125px;
 }
@@ -57,4 +58,10 @@
 }
 .bg-product {
     color: #ffc341;
+}
+.product-item a {
+    width: 100%;
+}
+.bg-l {
+    background-color: #000 !important;
 }

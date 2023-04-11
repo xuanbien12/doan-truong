@@ -32,6 +32,43 @@ html {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.rp-hdr {
+    display: none;
+}
+
+
+.rp-navbar-list {
+    display: none;
+}
+.show-list {
+    top: 65px;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    position: fixed;
+    z-index: 888;
+   
+    background-color: rgba(255, 255, 255, 0.75);
+    transition: all 0.5s ease;
+}
+.list-rp-main {
+    display: flex;
+}
+.xmark {
+    width: 25%;
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.nav-navbar1 {
+    display: none;
+}
+.rp-navbar-list:focus .show-list {
+    left: 0;
+}
 .mobile {
     
     border-left: 1px solid grey;

@@ -4,8 +4,12 @@ $(document).ready(function(){
         var scrollPosition = window.scrollY;
         if(scrollPosition > 10){
             $("header").addClass("site-header")
+            $(".rs-navbar-b").css('display','none')
+            
         }else {
             $("header").removeClass("site-header")
+            $(".rs-navbar-b").css('display','block')
+            
         }
     });
     
@@ -24,7 +28,15 @@ $(document).ready(function(){
     $(".toggle5").on("click" , function(){
         $(".toggle5-perform").toggle()
     })
+    $(".rp-bars-st").on("click",function(){
+        $(".show-list").css("left","0")
+        $(".xmark").css("right","0")
+   })
+   $(".xmark").on("click", function(){
+       $(".show-list").css("left","-100%")
+   })
+   
 
-
+   
     
 })
