@@ -56,7 +56,7 @@
 .prodcut-size li {
     margin-right: 10px;
 }
-.prodcut-size li a{
+.prodcut-size li{
     color: #000;
     background: #f0f0f0;
     padding: 4.5px 4px;
@@ -68,9 +68,17 @@
     border: 1px solid #ccc;
 }
 
-.prodcut-size li a:hover {
+.prodcut-size li:hover {
+    display: inline-block;
     color: #fff !important;
     background: #000 !important;
+    cursor: pointer;
+}
+.prodcut-size li:focus {
+    display: inline-block;
+    color: #fff !important;
+    background: #000 !important;
+    cursor: pointer;
 }
 .cart-iput {
     margin-top: 15px;
