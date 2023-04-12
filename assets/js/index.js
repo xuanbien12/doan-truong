@@ -3,12 +3,14 @@ $(document).ready(function(){
     
     window.addEventListener("scroll", function() {
         var scrollPosition = window.scrollY;
-        if(scrollPosition > 10){
+        if(scrollPosition > 100){
             $("header").addClass("site-header")
             $(".search").addClass("d-n")
+            $(".rs-contact").hide()
         }else {
             $("header").removeClass("site-header")
             $(".search").removeClass("d-n")
+            $(".rs-contact").show()
         }
         
     });

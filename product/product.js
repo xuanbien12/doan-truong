@@ -1,14 +1,17 @@
 $(document).ready(function(){
     window.addEventListener("scroll", function() {
         var scrollPosition = window.scrollY;
-        if(scrollPosition > 10 ){
+        if(scrollPosition > 100 ){
             $("header").addClass("site-header")
             $(".rs-navbar-b").css('display','none')
             $(".search").addClass("d-n")
+            $(".rs-contact").hide()
+           
         }else {
             $("header").removeClass("site-header")
             $(".rs-navbar-b").css('display','block')
             $(".search").removeClass("d-n")
+            $(".rs-contact").show()
         }
         
     });
@@ -35,7 +38,7 @@ $(document).ready(function(){
         const counter = $(".iput-nb").attr("value")
         let newcounter = (+counter) + 1 
         $(".iput-nb").attr("value", newcounter)
-        console.log("aaa")
+        
     })
     $(".down").on("click", function(){
         const counter = $(".iput-nb").attr("value")
