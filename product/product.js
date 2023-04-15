@@ -93,4 +93,10 @@ $(document).ready(function(){
        $(".show-list").css("left","-100%")
    })
   
+   $(".active").on("click",function(){
+    $(".active").each(function(index){
+        $(this).removeClass("bg-active")
+   })
+       $(this).addClass("bg-active")
+   })
 })

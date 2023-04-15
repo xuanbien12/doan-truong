@@ -38,7 +38,5 @@ $(document).ready(function(){
        $(".show-list").css("left","-100%")
    })
    
-
-   
-    
+ 
 })

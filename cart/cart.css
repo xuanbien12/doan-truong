@@ -5,7 +5,7 @@
 }
 .content-area {
     width: 75%;
-    
+    margin-right: 20px;
 }
 .widget-area {
     width: 25%;
@@ -97,4 +97,39 @@
     padding: 10px 0;
     display: block;
     text-decoration: none;
+}
+.shop-table {
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0 -1px 24px 0;
+    text-align: left;
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 5px;
+}
+.shop-table th {
+    font-weight: 700;
+    padding: 9px 12px;
+    line-height: 1.5em;
+}
+.shop-table td {
+    padding: 10px 15px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.product-quantity input {
+    padding: 4.5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 3.631em;
+    text-align: center;
+}
+.product-name a {
+    color: #000;
+}
+.product-remove {
+    cursor: pointer;
+}
+.product-remove:hover {
+    
+    
+    color: yellow;
 }
