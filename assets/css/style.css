@@ -35,8 +35,24 @@ html {
 .rp-hdr {
     display: none;
 }
-
-
+.fa-user {
+    color: #ffff;
+    font-size: 15px;
+    position: relative;
+    padding: 20px;
+    background-color: #000;
+    
+    cursor: pointer;
+}
+.hover-i:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
 .rp-navbar-list {
     display: none;
 }
@@ -91,7 +107,7 @@ html {
 }
 .rs-navbar {
     background-color: #141414;
-    border-bottom: 2px solid #000;
+    
 }
 
 .fa-house {

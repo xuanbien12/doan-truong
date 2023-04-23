@@ -100,22 +100,27 @@ $(document).ready(function(){
        $(this).addClass("bg-active")
    })
 
-   var cart = JSON.parse(localStorage.getItem('cart') || '[]')
+   let cart = JSON.parse(localStorage.getItem('cart') || '[]')
    // đưa dữ liệu lên localStorage lưu trữa
    
-   
+   $(".add-to-cart").on("click", function () {
+    // const productId = $(this).data('id');
+    // let cart = cart.find((item) => item == productId)
+
+    addCart()
+    })
    function addCart() {
        
-       var img = $(".inf-img-inner img").attr("src")
-       var name = $(".prodcut-title").text()
-       var id = $(".add-to-cart").attr("data-id") 
-       var price = $(".car-price").text()
-       var priceNumber = $(".car-price").text().replace(/\s+/g, '')
-       var size = $(".active.bg-active").text()
-       var quantity = $(".iput-nb").attr("value")
-       var linkProduct = $(".link-product").attr("href")
+       let img = $(".inf-img-inner img").attr("src")
+       let name = $(".prodcut-title").text()
+       let id = $(".add-to-cart").attr("data-id") 
+       let price = $(".car-price").text()
+       let priceNumber = $(".car-price").text().replace(/\s+/g, '')
+       let size = $(".active.bg-active").text()
+       let quantity = $(".iput-nb").attr("value")
+       let linkProduct = $(".link-product").attr("href")
        
-       var sp = {
+       let sp = {
            id : id ,
            img :img ,
            name : name,
@@ -133,15 +138,6 @@ $(document).ready(function(){
        localStorage.setItem("cart", JSON.stringify(cart))
        window.location.href = "./../cart/cart.html"
    }
-   $(".add-to-cart").on("click", function () {
-    // const productId = $(this).data('id');
-    // var cart = cart.find((item) => item == productId)
-    // if(a) {
-    //     cart.quantity + 1
-    // } else {
-    //     cart.push(sp)
-    // }
-    addCart()
-})
+   
 
 })

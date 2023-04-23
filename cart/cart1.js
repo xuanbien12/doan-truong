@@ -40,7 +40,7 @@ $(document).ready(function () {
     }
     
   
-  // tính tiền khi user nhập số lượng
+// tính tiền khi user nhập số lượng
     $(".cart-number").on("keyup", function () {
         let price = $(".price-c").text().replace(/,/g, '');
         let number = $(this).val()
@@ -48,6 +48,7 @@ $(document).ready(function () {
        $(".total-price").text(total.toLocaleString())
        totalPriceCart($(".total-price"))
     })
+    
 
 
 // Tính tổng số hàng trong cart
@@ -63,7 +64,7 @@ function totalPriceCart(item) {
     
 totalPriceCart($(".total-price"))
 
-
+// tính độ dài của cart
     var lengthCart = $("#myCart tr")
    
     if (lengthCart.length >= 1) {
