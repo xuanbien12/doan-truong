@@ -30,6 +30,7 @@
 }
 
 .widgettitle {
+    position: relative;
     color: #ffc341;
     text-transform: uppercase;
     font-weight: bold;
@@ -119,7 +120,7 @@
     padding: 4.5px 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    width: 3.631em;
+    width: 5em;
     text-align: center;
 }
 .product-name a {
@@ -128,8 +129,100 @@
 .product-remove {
     cursor: pointer;
 }
-.product-remove:hover {
+
+.product-subtotal {
+    min-width: 150px;
+}
+.btn-delete {
+    display: inline-block;
+    padding: 8px ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: red;
+    font-size: 18px;
+}
+.btn-delete:hover {
+    background-color: red;
+    color: #fff;
+}
+.cart_totals {
+    width: 48%;
+    float: right;
+}
+.cart_totals h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.shop_table {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0 -1px 24px 0;
+    text-align: left;
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.shop_table tr th {
+    width: 45%;
+    padding: 9px 12px;
+}
+.checkout-btn {
+    background-color: #ffc341;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    padding: 1em;
+}
+.checkout-btn:hover {
+    background-color: #935386;
+    color: #fff;
+}
+.total-price {
+    word-break: break-all;
+}
+.totals-price {
+    word-break: break-all;
+}
+@media(max-width :990px) {
+    .body-inner {
+        flex-direction: column;
+    }
+    .content-area {
+        width: 100%;
+    }
+    .widget-area {
+        width: 100%;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .shop-table {
+        display: flex;
+        
+    }
+    .shop-table thead tr {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    #myCart  tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .product-price {
+        padding-top: 55px;
+    }
     
-    
-    color: yellow;
 }

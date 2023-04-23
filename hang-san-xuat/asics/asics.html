@@ -84,7 +84,7 @@
                         
                         <div class="nav-navbar">
                             <ul class="dl-fl">
-                                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="./../../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                                 <li>
                                     <input type="text" name="input" class="search" value="" placeholder="tìm kiếm">
                                 </li>
@@ -176,11 +176,10 @@
                                 <span> Sắp xếp theo </span>
                                 <form action="">
                                     
-                                    <select class="orderby">
+                                    <select class="orderby" id="check">
                                         <option value="date">Mới nhất</option>
-                                        <option value="popularity">Thứ tự theo mức độ phổ biến</option>
-                                        <option value="rating">Thứ tự theo điểm đánh giá</option>
-                                        <option value="price">Thứ tự : theo giá từ thấp đến cao</option>
+                                        
+                                        <option value="btn-price">Thứ tự : theo giá từ thấp đến cao</option>
                                         <option value="price-desc">Thự tự : theo giá từ cao đến thấp</option>
 
                                     </select>
@@ -222,23 +221,7 @@
 
 
                         </ul>
-                        <div class="product-t dl-fl-between mg-t3">
-                            <div class="product-filter dl-fl">
-                                <span> Sắp xếp theo </span>
-                                <form action="">
-                                    
-                                    <select class="orderby">
-                                        <option value="date">Mới nhất</option>
-                                        <option value="popularity">Thứ tự theo mức độ phổ biến</option>
-                                        <option value="rating">Thứ tự theo điểm đánh giá</option>
-                                        <option value="price">Thứ tự : theo giá từ thấp đến cao</option>
-                                        <option value="price-desc">Thự tự : theo giá từ cao đến thấp</option>
-
-                                    </select>
-                                </form>
-                            </div>
-                            
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -311,5 +294,6 @@
 <script src="asics.js"></script>
 <script src="./../jsMain.js"></script>
 <script src="./../../search/search.js"></script>
+<script src="./../../shop/shop.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </html>

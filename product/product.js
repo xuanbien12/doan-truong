@@ -99,4 +99,49 @@ $(document).ready(function(){
    })
        $(this).addClass("bg-active")
    })
+
+   var cart = JSON.parse(localStorage.getItem('cart') || '[]')
+   // đưa dữ liệu lên localStorage lưu trữa
+   
+   
+   function addCart() {
+       
+       var img = $(".inf-img-inner img").attr("src")
+       var name = $(".prodcut-title").text()
+       var id = $(".add-to-cart").attr("data-id") 
+       var price = $(".car-price").text()
+       var priceNumber = $(".car-price").text().replace(/\s+/g, '')
+       var size = $(".active.bg-active").text()
+       var quantity = $(".iput-nb").attr("value")
+       var linkProduct = $(".link-product").attr("href")
+       
+       var sp = {
+           id : id ,
+           img :img ,
+           name : name,
+           price : price,
+           priceNumber : priceNumber ,
+           size: size ,
+           quantity : quantity,
+           linkProduct : linkProduct,
+
+       }
+       
+       cart.push(sp)
+       
+       
+       localStorage.setItem("cart", JSON.stringify(cart))
+       window.location.href = "./../cart/cart.html"
+   }
+   $(".add-to-cart").on("click", function () {
+    // const productId = $(this).data('id');
+    // var cart = cart.find((item) => item == productId)
+    // if(a) {
+    //     cart.quantity + 1
+    // } else {
+    //     cart.push(sp)
+    // }
+    addCart()
+})
+
 })

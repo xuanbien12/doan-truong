@@ -66,6 +66,7 @@ html {
 .nav-navbar1 {
     display: none;
 }
+
 .rp-navbar-list:focus .show-list {
     left: 0;
 }

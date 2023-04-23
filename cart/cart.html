@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./../assets/css/reset.css">
-    <link rel="stylesheet" href="./../assets/css/responsive.css">
+   
     <link rel="stylesheet" href="./../assets/css/style.css">
     <link rel="stylesheet" href="./../assets/css/fonts.css">
     <link rel="stylesheet" href="./../assets/css/commom.css">
     <link rel="stylesheet" href="./../shop/style.css">
+    <link rel="stylesheet" href="./../assets/css/responsive.css">
     <link rel="stylesheet" href="cart.css">
 </head>
+
 <body>
     <div class="page">
         <header >
@@ -23,7 +28,7 @@
                         <div class="rs-logo col-lr-1">
                             <span class="rp-bars-st rp-hdr" href=""><i class="fa-solid fa-bars"></i></span>
                             <a href="./../index.html"><img src="https://runningstore.vn/wp-content/uploads/2016/02/Running-store-logo_final_black_-180x60.png" alt=""></a>
-                            <a class="rp-cart-shopping rp-hdr" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="rp-cart-shopping rp-hdr" href="./../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                         <div class="rs-contact col-lr-1">
                             <ul class="dl-fl" >
@@ -66,10 +71,10 @@
                             <div class="list-rp-main">
                                 <ul class=" list-rp-inner ">
                                     <h2 class="sty-navbar-a">meune</h2>
-                                    <li ><a class="sty-navbar-a"  href="./index.html">
+                                    <li><a class="sty-navbar-a"  href="./../index.html">
                                         <i class="fa-solid fa-house"></i>
                                     </a></li>
-                                    <li><a class="sty-navbar-a bg-l" href="./../shop/index.html"><span>Sản Phẩm </span></a></li>
+                                    <li><a class="sty-navbar-a bg-l" href="./index.html"><span>Sản Phẩm </span></a></li>
                                     <li><a class="sty-navbar-a" href="./../hang-san-xuat/adidas/adidas.html"><span>adidas</span></a></li>
                                     <li><a class="sty-navbar-a" href="./../hang-san-xuat/nike/nike.html"><span>nike</span></a></li>
                                     <li><a class="sty-navbar-a" href="./../hang-san-xuat/asics/asics.html"><span>asics</span></a></li>
@@ -106,11 +111,13 @@
             <div class="container">
                 <div class="body-inner">
                     <div class="content-area">
-                        <p  class="content-area-t">
-                            Chưa có sản phẩm nào trong giỏ hàng.
-                        </p>
-                        <p class="btn-content-area"><a href="./../shop/index.html">quay lại cửa hàng</a></p>
-                        <span class="acc"></span>
+                        <div class="content-area-inner">
+                            <p class="content-area-t">
+                                Chưa có sản phẩm nào trong giỏ hàng.
+                            </p>
+                            <p class="btn-content-area"><a href="./../shop/index.html">quay lại cửa hàng</a></p>
+                            <span class="acc"></span>
+                        </div>
                         <table class="shop-table">
                             <thead>
                                 <tr>
@@ -124,10 +131,32 @@
                                 </tr>
                             </thead>
                             <tbody id="myCart">
-                                
+
                             </tbody>
+                            
                         </table>
-                    
+                        <div class="cart_totals">
+                            <h2>Tổng số lượng</h2>
+                            <table class="shop_table">
+                                <tbody>
+                                    <tr>
+                                        <th>Tông phụ</th>
+                                        <td ><span class="totals-price"></span><span>đ</span></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th>Tổng</th>
+                                        <td><span class="totals-price"></span><span>đ</span></td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                            <div>
+                                <a href="" class="checkout-btn">
+                                    Tiến hành đặt hàng
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -137,11 +166,12 @@
                             <h2 class="widgettitle">product</h2>
                             <ul class="product_list_widget">
                                 <li>
-                                    <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2023/04/z4245398283495_32d0532a6ace3670463d84c063c7c1dd-300x300.jpg" alt="">
+                                    <a class="product_item_widget" href="./../product/product26.html">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2023/04/z4245398283495_32d0532a6ace3670463d84c063c7c1dd-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
-                                            <p>Adidas Galaxy 6 -  Halo Silver / Carbon / Cloud White - GW4140 - xám</p>
-                                            <span >
+                                            <p>Adidas Galaxy 6 - Halo Silver / Carbon / Cloud White - GW4140 - xám</p>
+                                            <span>
                                                 <del>1 700 000</del>
                                                 <span>1 150 000<span>đ</span></span>
                                             </span>
@@ -149,24 +179,26 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2023/03/z4187231822280_7d0ccda8b6b916d4c9ae8ea158124ec1-300x300.jpg" alt="">
+                                    <a class="product_item_widget" href="./../product/product1.html">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2023/03/z4187231822280_7d0ccda8b6b916d4c9ae8ea158124ec1-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
                                             <p>Nike W Air Zoom Pegasus 39 -White/Pure Platinum/Wheat - DH4072-104</p>
-                                            <span >
+                                            <span>
                                                 <del>3 519 000</del>
                                                 <span>2 400 000<span>đ</span></span>
                                             </span>
                                         </div>
                                     </a>
                                 </li>
-                                
+
                                 <li>
-                                    <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2022/08/577e2108f73b32656b2a-300x300.jpg" alt="">
+                                    <a class="product_item_widget" href="./../product/product2.html">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2022/08/577e2108f73b32656b2a-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
                                             <p>Nike W Air Zoom Pegasus 39 - Black/Dark Smoke Grey/White - DH4072-001</p>
-                                            <span >
+                                            <span>
                                                 <del>3 519 000</del>
                                                 <span>2 250 000<span>đ</span></span>
                                             </span>
@@ -174,11 +206,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2022/05/z4146998286354_080d39956d56a4e1d440fa9255b16fae-300x300.jpg" alt="">
+                                    <a class="product_item_widget" href="./../product/product3.html">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2022/05/z4146998286354_080d39956d56a4e1d440fa9255b16fae-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
                                             <p>Nike Zoom Fly 4 - Black/Anthracite/Racer Blue/White - CT2392-001</p>
-                                            <span >
+                                            <span>
                                                 <del>4 400 000</del>
                                                 <span>2 650 000<span>đ</span></span>
                                             </span>
@@ -186,11 +219,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2023/02/cc31ba9851168b48d207-300x300.jpg" alt="">
+                                    <a class="product_item_widget" href="./../product/product4.html">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2023/02/cc31ba9851168b48d207-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
                                             <p>Nike Pegasus Turbo Next Nature - Black/Sesame/Sail - DM3413-001</p>
-                                            <span >
+                                            <span>
                                                 <del>4 400 000</del>
                                                 <span>2 800 000<span>đ</span></span>
                                             </span>
@@ -226,10 +260,11 @@
                             <ul class="product_list_widget">
                                 <li>
                                     <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2023/04/z4245398283495_32d0532a6ace3670463d84c063c7c1dd-300x300.jpg" alt="">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2023/04/z4245398283495_32d0532a6ace3670463d84c063c7c1dd-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
-                                            <p>Adidas Galaxy 6 -  Halo Silver / Carbon / Cloud White - GW4140 - xám</p>
-                                            <span >
+                                            <p>Adidas Galaxy 6 - Halo Silver / Carbon / Cloud White - GW4140 - xám</p>
+                                            <span>
                                                 <del>1 700 000</del>
                                                 <span>1 150 000<span>đ</span></span>
                                             </span>
@@ -238,23 +273,25 @@
                                 </li>
                                 <li>
                                     <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2023/03/z4187231822280_7d0ccda8b6b916d4c9ae8ea158124ec1-300x300.jpg" alt="">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2023/03/z4187231822280_7d0ccda8b6b916d4c9ae8ea158124ec1-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
                                             <p>Nike W Air Zoom Pegasus 39 -White/Pure Platinum/Wheat - DH4072-104</p>
-                                            <span >
+                                            <span>
                                                 <del>3 519 000</del>
                                                 <span>2 400 000<span>đ</span></span>
                                             </span>
                                         </div>
                                     </a>
                                 </li>
-                                
+
                                 <li>
                                     <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2022/08/577e2108f73b32656b2a-300x300.jpg" alt="">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2022/08/577e2108f73b32656b2a-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
                                             <p>Nike W Air Zoom Pegasus 39 - Black/Dark Smoke Grey/White - DH4072-001</p>
-                                            <span >
+                                            <span>
                                                 <del>3 519 000</del>
                                                 <span>2 250 000<span>đ</span></span>
                                             </span>
@@ -263,10 +300,11 @@
                                 </li>
                                 <li>
                                     <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2022/05/z4146998286354_080d39956d56a4e1d440fa9255b16fae-300x300.jpg" alt="">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2022/05/z4146998286354_080d39956d56a4e1d440fa9255b16fae-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
                                             <p>Nike Zoom Fly 4 - Black/Anthracite/Racer Blue/White - CT2392-001</p>
-                                            <span >
+                                            <span>
                                                 <del>4 400 000</del>
                                                 <span>2 650 000<span>đ</span></span>
                                             </span>
@@ -275,10 +313,11 @@
                                 </li>
                                 <li>
                                     <a class="product_item_widget" href="">
-                                        <img src="https://runningstore.vn/wp-content/uploads/2023/02/cc31ba9851168b48d207-300x300.jpg" alt="">
+                                        <img src="https://runningstore.vn/wp-content/uploads/2023/02/cc31ba9851168b48d207-300x300.jpg"
+                                            alt="">
                                         <div class="product_ct_widget">
                                             <p>Nike Pegasus Turbo Next Nature - Black/Sesame/Sail - DM3413-001</p>
-                                            <span >
+                                            <span>
                                                 <del>4 400 000</del>
                                                 <span>2 800 000<span>đ</span></span>
                                             </span>
@@ -296,8 +335,10 @@
                 <div class="footer-inner-t dl-f">
                     <div class="textwidget">
                         <div class="ft-logo col-lr-1 ">
-                            <a href="./index.html"><img src="http://runningstore.vn/wp-content/uploads/2016/02/Running-store-logo_final_white_footer-1.png" alt=""></a>
-                            <h3  class="site-namemg-b mg-b ">r u n n i n g s tore.vn</h3>
+                            <a href="./index.html"><img
+                                    src="http://runningstore.vn/wp-content/uploads/2016/02/Running-store-logo_final_white_footer-1.png"
+                                    alt=""></a>
+                            <h3 class="site-namemg-b mg-b ">r u n n i n g s tore.vn</h3>
                             <p class="mg-b ">HOTLINE: 0923.833.666</p>
                             <p class="mg-b ">EMAIL: Runningstore.vn@gmail.com</p>
                             <ul class="rs-icons dl-fl">
@@ -307,7 +348,8 @@
                                 <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
                             </ul>
                             <div class="input-gmail dl-fl">
-                                <input  type="text" name="input-gmail" placeholder="Đăng ký email nhận voucher giảm giá 25%">
+                                <input type="text" name="input-gmail"
+                                    placeholder="Đăng ký email nhận voucher giảm giá 25%">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                         </div>
@@ -339,7 +381,9 @@
                         </ul>
                     </div>
                     <div class="textwidget">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frunningstore.vn&tabs=timeline&width=350&height=350&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=490866727757684" frameborder="0"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frunningstore.vn&tabs=timeline&width=350&height=350&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=490866727757684"
+                            frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -355,8 +399,12 @@
         </footer>
     </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./../assets/js/jquery.min.js"></script>
 <script src="./../assets/js/index.js"></script>
-<script src="cart.js"></script>
+
+<script src="cart1.js"></script>
+
 </html>
