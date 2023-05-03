@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    let productsInCart = JSON.parse(localStorage.getItem('cart') || '[]')
+   
+    var productsInCart = JSON.parse(localStorage.getItem('cart') || '[]')
+   
     renderProduct(productsInCart)
 
     $(".btn-delete").on("click",function(){
@@ -32,22 +34,38 @@ $(document).ready(function () {
             <p>Size: ${item.size}</p>
         </td>
         <td class="product-price"><span> <span class="price-c">${price.toLocaleString()}</span><span> đ</span></span></td>
-        <td class="product-quantity"><input class="cart-number" type="text" value="${item.quantity}"></td>
+        <td class="product-quantity"><input data-id="${item.id}" class="cart-number" type="text" value="${item.quantity}"></td>
         <td class="product-subtotal"><span class="total-price">${totalPrice.toLocaleString()}</span><span> đ</span></td>
         </tr>`;
         }) 
         $("#myCart").html(html)  
     }
-    
-  
-// tính tiền khi user nhập số lượng
+    function a (){{
+        
+    }}
     $(".cart-number").on("keyup", function () {
-        let price = $(".price-c").text().replace(/,/g, '');
+        
         let number = $(this).val()
-        var total = price * number
-       $(".total-price").text(total.toLocaleString())
-       totalPriceCart($(".total-price"))
+        let productId = $(this).data("id")
+        const carts = productsInCart.find((item) => item.id == productId)
+        carts.quantity = number
+        localStorage.setItem('cart', JSON.stringify(productsInCart))
+        renderProduct(productsInCart)
+        totalPriceCart($(".total-price"))
     })
+   
+// tính tiền khi user nhập số lượng
+    // $(".cart-number").on("keyup", function () {
+    //     var cart = JSON.parse(localStorage.getItem('cart') || '[]')
+    //     let price = $(".price-c").text().replace(/,/g, '');
+    //     let number = $(this).val()
+    //     let a = $(this).data("id")
+    //     console.log(a)
+    //     console.log(cart)
+    //     var total = price * number
+    //    $(".total-price").text(total.toLocaleString())
+    //    totalPriceCart($(".total-price"))
+    // })
     
 
 
@@ -61,8 +79,8 @@ function totalPriceCart(item) {
    })
    $(".totals-price").text(totalPrice.toLocaleString())
 }
-    
 totalPriceCart($(".total-price"))
+
 
 // tính độ dài của cart
     var lengthCart = $("#myCart tr")

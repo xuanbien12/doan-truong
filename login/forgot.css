@@ -1,0 +1,18 @@
+.c {
+    justify-content: center;
+} 
+.submit-inner {
+    width: 100%;
+    text-align: center;
+}
+
+.style {
+    margin-top: 25px;
+    padding: 10px;
+    color: #fff;
+
+}
+.phone {
+    display: none;
+    
+}

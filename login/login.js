@@ -11,4 +11,13 @@ $(document).ready(function(){
     $(".submit-inner").on("click", function(){
         window.location.href = "./../index.html"
     })
+    $(".password-by-phone").on("click",function(){
+        
+        $(".email").hide()
+        $(".phone").show()
+    })
+    $(".password-by-email").on("click",function(){
+        $(".email").show()
+        $(".phone").hide()
+    })
 })

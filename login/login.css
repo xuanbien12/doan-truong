@@ -68,12 +68,12 @@ html {
     display: inline-block;
     padding: 10px 20px;
     color: #03e9f4;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 40px;
+    margin-top: 20px;
     letter-spacing: 4px
   }
   
@@ -109,6 +109,7 @@ html {
       left: 100%;
     }
   }
+  
   
 
 
@@ -178,3 +179,12 @@ html {
   .register {
     display: none;
   }
+
+
+  .forgot {
+    
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    
+}

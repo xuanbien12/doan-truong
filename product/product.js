@@ -100,44 +100,86 @@ $(document).ready(function(){
        $(this).addClass("bg-active")
    })
 
-   let cart = JSON.parse(localStorage.getItem('cart') || '[]')
+  
    // đưa dữ liệu lên localStorage lưu trữa
    
    $(".add-to-cart").on("click", function () {
-    // const productId = $(this).data('id');
-    // let cart = cart.find((item) => item == productId)
+    var cart = JSON.parse(localStorage.getItem('cart') || '[]')
+    let img = $(".inf-img-inner img").attr("src")
+    let name = $(".prodcut-title").text()
+    let id = $(".add-to-cart").attr("data-id") 
+    let price = $(".car-price").text()
+    let priceNumber = $(".car-price").text().replace(/\s+/g, '')
+    let size = $(".active.bg-active").text()
+    let quantity = $(".iput-nb").attr("value")
+    let linkProduct = $(".link-product").attr("href")
+    
+    let sp = {
+        id : id ,
+        img :img ,
+        name : name,
+        price : price,
+        priceNumber : priceNumber ,
+        size: size ,
+        quantity : quantity,
+        linkProduct : linkProduct,
 
-    addCart()
+    }
+    const numberQuantity = $(".iput-nb").attr("value")
+    const productId = $(this).data('id');
+    let carts = cart.find((item) => item.id == productId)
+    
+    if(carts) {
+        carts.quantity = +numberQuantity +  +(carts.quantity)
+    } else {
+        cart.push(sp)
+    }
+   
+    localStorage.setItem("cart", JSON.stringify(cart))
+    window.location.href = "./../cart/cart.html"
     })
-   function addCart() {
+    
+//    function addCart() {
        
-       let img = $(".inf-img-inner img").attr("src")
-       let name = $(".prodcut-title").text()
-       let id = $(".add-to-cart").attr("data-id") 
-       let price = $(".car-price").text()
-       let priceNumber = $(".car-price").text().replace(/\s+/g, '')
-       let size = $(".active.bg-active").text()
-       let quantity = $(".iput-nb").attr("value")
-       let linkProduct = $(".link-product").attr("href")
+//        let img = $(".inf-img-inner img").attr("src")
+//        let name = $(".prodcut-title").text()
+//        let id = $(".add-to-cart").attr("data-id") 
+//        let price = $(".car-price").text()
+//        let priceNumber = $(".car-price").text().replace(/\s+/g, '')
+//        let size = $(".active.bg-active").text()
+//        let quantity = $(".iput-nb").attr("value")
+//        let linkProduct = $(".link-product").attr("href")
        
-       let sp = {
-           id : id ,
-           img :img ,
-           name : name,
-           price : price,
-           priceNumber : priceNumber ,
-           size: size ,
-           quantity : quantity,
-           linkProduct : linkProduct,
+//        let sp = {
+//            id : id ,
+//            img :img ,
+//            name : name,
+//            price : price,
+//            priceNumber : priceNumber ,
+//            size: size ,
+//            quantity : quantity,
+//            linkProduct : linkProduct,
 
-       }
+//        }
+        
+//         const numberQuantity = $(".iput-nb").attr("value")
+        
+//         const productId = $(this).data('id');
+//         const result = cart.find((item) => item.id == productId)
+//         console.log(numberQuantity)
+//         console.log(productId)
+//         if( result) {
+//             cart.quantity += numberQuantity
+            
+//         } else {
+//             cart.push(sp)
+//         }
        
-       cart.push(sp)
        
        
-       localStorage.setItem("cart", JSON.stringify(cart))
-       window.location.href = "./../cart/cart.html"
-   }
+//        localStorage.setItem("cart", JSON.stringify(cart))
+//     //    window.location.href = "./../cart/cart.html"
+//    }
    
 
 })

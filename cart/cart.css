@@ -193,6 +193,9 @@
 .totals-price {
     word-break: break-all;
 }
+.c a {
+    cursor: pointer;
+}
 @media(max-width :990px) {
     .body-inner {
         flex-direction: column;
