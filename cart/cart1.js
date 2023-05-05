@@ -49,9 +49,10 @@ $(document).ready(function () {
         let productId = $(this).data("id")
         const carts = productsInCart.find((item) => item.id == productId)
         carts.quantity = number
-        localStorage.setItem('cart', JSON.stringify(productsInCart))
+        
         renderProduct(productsInCart)
         totalPriceCart($(".total-price"))
+        localStorage.setItem('cart', JSON.stringify(productsInCart))
     })
    
 // tính tiền khi user nhập số lượng
