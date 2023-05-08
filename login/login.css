@@ -196,6 +196,7 @@ html {
 
 }
 .link-user {
+  
   position: absolute;
   padding: 20px 30px;
   z-index: 990;
@@ -204,11 +205,23 @@ html {
   top: 50px;
   border-radius: 5px;
 }
-.link-user:hover {
+.link-user:hover,
+.link-home:hover {
   border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #03e9f4,                0 0 25px #03e9f4,                0 0 50px #03e9f4,                0 0 100px #03e9f4;
   font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.link-home {
+
+  position: absolute;
+  padding: 20px 30px;
+  z-index: 990;
+  background-color: #fff;
+  left: 50px;
+  top: 150px;
+  border-radius: 5px;
 }

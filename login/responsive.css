@@ -1,4 +1,4 @@
-@media ( max-width  : 400px){
+@media ( max-width  : 480px){
     .login-box {
         width: 300px;
     }
@@ -6,4 +6,11 @@
         padding: 10px;
         font-size: 10px;
     }
+    .login-box {
+        margin-top: 50px;
+    }
+    .page-title {
+        margin-top: 200px;
+    }
+    
 }
