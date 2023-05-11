@@ -333,3 +333,22 @@ html {
     text-align: center;
     color: #fff;
 }
+.message {
+    background-image: url(./../image/mo-gi-nh-qua-messenger-khong-b-gim-cht-lung_6fff5c43.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom:  30px;
+    right: 20px;
+    z-index: 999;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}

@@ -11,6 +11,7 @@ $(document).ready(function(){
                 <td class="item-inner"><a href="" class="btn-delete-inner btn-delete" data-id="${item.name}">X</a></td>
                 <td class="item-inner stt">${++number}</td>
                 <td class="item-inner name">${item.name}</td>
+                <td class="item-inner tel">${item.tel}</td>
                 <td class="item-inner email">${item.email}</td>
                 <td class="item-inner password">${item.password}</td>
             </tr>

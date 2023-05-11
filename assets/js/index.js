@@ -6,11 +6,11 @@ $(document).ready(function(){
         if(scrollPosition > 100){
             $("header").addClass("site-header")
             $(".search").addClass("d-n")
-            $(".rs-contact").hide()
+           
         }else {
             $("header").removeClass("site-header")
             $(".search").removeClass("d-n")
-            $(".rs-contact").show()
+          
         }
         
     });

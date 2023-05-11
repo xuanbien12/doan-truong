@@ -1,4 +1,7 @@
 @media(max-width :770px) {
+    .message {
+        display: block;
+    }
     .vc-row-inner {
         display: flex;
         flex-direction: column;
@@ -128,6 +131,10 @@
     .input-gmail input {
         font-size: 8px;
     }
+    .rs-contact {
+        display: none;
+    }
+   
     
 }
 @media(max-width :480px) {
@@ -155,5 +162,8 @@
     .rs-contact ul {
         display: flex;
         flex-direction: column;
+    }
+    .rs-contact {
+        display: none;
     }
 }

@@ -5,12 +5,12 @@ $(document).ready(function(){
             $("header").addClass("site-header")
             $(".rs-navbar-b").css('display','none')
             $(".search").addClass("d-n")
-            $(".rs-contact").hide()
+           
         }else {
             $("header").removeClass("site-header")
             $(".rs-navbar-b").css('display','block')
             $(".search").removeClass("d-n")
-            $(".rs-contact").show()
+           
         }
     });
     
