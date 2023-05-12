@@ -36,4 +36,10 @@ $(document).ready(function(){
    $(".xmark").on("click", function(){
        $(".show-list").css("left","-100%")
    })
+
+
+  
+
+
+   
 })

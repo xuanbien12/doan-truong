@@ -8,7 +8,7 @@ let product = [
       del: "3 519 00 đ",
       dataPrice: "2400000",
       price: "2 400 00 đ",
-      link: "./../product/product1.html"
+      link: "./../../product/product1.html"
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ let product = [
       del: "3 519 00 đ",
       dataPrice: "2250000",
       price: "2 250 00 đ",
-      link: "./../product/product2.html"
+      link: "./../../product/product2.html"
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ let product = [
       del: "4 000 00 đ",
       dataPrice: "2650000",
       price: "2 650 000 đ",
-      link: "./../product/product3.html"
+      link: "./../../product/product3.html"
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ let product = [
       del: "4 000 00 đ",
       dataPrice: "2800000",
       price: "2 800 000 đ",
-      link: "./../product/product4.html"
+      link: "./../../product/product4.html"
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ let product = [
       del: "3 100 00 đ",
       dataPrice: "1700000",
       price: "1 700 000 đ",
-      link: "./../product/product5.html"
+      link: "./../../product/product5.html"
     },
     {
       id: 6,
@@ -64,11 +64,11 @@ let product = [
       del: "3 100 00 đ",
       dataPrice: "1700000",
       price: "1 700 000 đ",
-      link: "./../product/product6.html"
+      link: "./../../product/product6.html"
     },
     {
       id: 7,
-      brand: "Asics",
+      brand: "asics",
       img:
         "https://runningstore.vn/wp-content/uploads/2023/02/z4114145890971_d07a0b70a64b1568a9f5c8627bbaf755-300x300.jpg",
       name:
@@ -76,11 +76,11 @@ let product = [
       del: "2 700 00 đ",
       dataPrice: "2100000",
       price: "2 100 000 đ",
-      link: "./../product/product7.html"
+      link: "./../../product/product7.html"
     },
     {
       id: 8,
-      brand: "Nike",
+      brand: "nike",
       img:
         "https://runningstore.vn/wp-content/uploads/2023/02/z4113953742291_8ce6aefeadec3a0cc3d8602839d1d57b-300x300.jpg",
       name:
@@ -88,22 +88,22 @@ let product = [
       del: "2 950 00 đ",
       dataPrice: "1950000",
       price: "1 950 000đ",
-      link: "./../product/product8.html"
+      link: "./../../product/product8.html"
     },
     {
       id: 9,
-      brand: "Nike",
+      brand: "nike",
       img:
         "https://runningstore.vn/wp-content/uploads/2022/08/2bede7ee59359c6bc524-300x300.jpg",
       name: "Nike Quest 4 – Black/Blue/Red-White – DA1105-004 màu xanh đen",
       del: "2 400 00 đ",
       dataPrice: "1500000",
       price: "1 500 000đ",
-      link: "./../product/product9.html"
+      link: "./../../product/product9.html"
     },
     {
       id: 10,
-      brand: "Adidas",
+      brand: "adidas",
       img:
         "https://runningstore.vn/wp-content/uploads/2021/05/z4114163199322_88e04dea3c3bac1bc51ad7e08793fcb9-300x300.jpg",
       name:
@@ -111,11 +111,11 @@ let product = [
       del: "2 950 00 đ",
       dataPrice: "1650000",
       price: "1 650 000đ",
-      link: "./../product/product10.html"
+      link: "./../../product/product10.html"
     },
     {
       id: 11,
-      brand: "NIKE",
+      brand: "nike",
       img:
         "https://runningstore.vn/wp-content/uploads/2023/02/z4091734359793_455279cc1e88f703550dc3a91d1a4441-300x300.jpg",
       name:
@@ -123,11 +123,11 @@ let product = [
       del: "3 519 00 đ",
       dataPrice: "2530000",
       price: "2 530 000đ",
-      link: "./../product/product11.html"
+      link: "./../../product/product11.html"
     },
     {
       id: 12,
-      brand: "NIKE",
+      brand: "nike",
       img:
         "https://runningstore.vn/wp-content/uploads/2022/05/9a788e6ad92c1972403d-300x300.jpg",
       name:
@@ -135,40 +135,40 @@ let product = [
       del: "4 700 00 đ",
       dataPrice: "2700000",
       price: "2 700 000đ",
-      link: "./../product/product12.html"
+      link: "./../../product/product12.html"
     },
     {
       id: 13,
-      brand: "NIKE",
+      brand: "nike",
       img:
         "https://runningstore.vn/wp-content/uploads/2023/02/z4091403130719_e2007b971c3684aedd9d88cc32ce61bc-300x300.jpg",
       name: "Nike Zoom Fly 5 – Black/White – DM8968-001",
       del: "4 900 00 đ",
       dataPrice: "2750000",
       price: "2 750 000đ",
-      link: "./../product/product13.html"
+      link: "./../../product/product13.html"
     },
     {
       id: 14,
-      brand: "NIKE",
+      brand: "nike",
       img:
         "https://runningstore.vn/wp-content/uploads/2022/02/nike-zoom-winflo-8-cw3419-006-01-300x300.jpg",
       name: "Nike Zoom Winflo 8 –  Black/Dark Smoke Grey/White – CW3419-006",
       del: "3 100 00 đ",
       dataPrice: "1950000",
       price: "1 950 000đ",
-      link: "./../product/product14.html"
+      link: "./../../product/product14.html"
     },
     {
       id: 15,
-      brand: "NIKE",
+      brand: "nike",
       img:
         "https://runningstore.vn/wp-content/uploads/2022/10/z4114056151526_8bae42873c72fd15eef6bd1977282a5a-300x300.jpg",
       name: "Nike Revolution 6 – Black / Laser Blue – DC3728-012",
       del: "1 800 00 đ",
       dataPrice: "1400000",
       price: "1 400 000đ",
-      link: "./../product/product15.html"
+      link: "./../../product/product15.html"
     },
     {
       id: 16,
@@ -180,7 +180,7 @@ let product = [
       del: " 4 000 00 đ",
       dataPrice: "1950000",
       price: "1 950 000đ",
-      link: "./../product/product16.html"
+      link: "./../../product/product16.html"
     },
     {
       id: 17,
@@ -191,7 +191,7 @@ let product = [
       del: " 1 400 00 đ",
       dataPrice: "1200000",
       price: "1 200 000đ",
-      link: "./../product/product17.html"
+      link: "./../../product/product17.html"
     },
     {
       id: 18,
@@ -202,7 +202,7 @@ let product = [
       del: " 4 900 00 đ",
       dataPrice: "3990000",
       price: "3 990 000đ",
-      link: "./../product/product18.html"
+      link: "./../../product/product18.html"
     },
     {
       id: 19,
@@ -214,7 +214,7 @@ let product = [
       del: " 4 700 00 đ",
       dataPrice: "2750000",
       price: "2 750 000đ",
-      link: "./../product/product19.html"
+      link: "./../../product/product19.html"
     },
     {
       id: 20,
@@ -226,7 +226,7 @@ let product = [
       del: " 3 519 00 đ",
       dataPrice: "2750000",
       price: "2 750 000đ",
-      link: "./../product/product20.html"
+      link: "./../../product/product20.html"
     },
     {
       id: 21,
@@ -238,7 +238,7 @@ let product = [
       del: " 7 990 00 đ",
       dataPrice: "4490000",
       price: "4 490 000đ",
-      link: "./../product/product21.html"
+      link: "./../../product/product21.html"
     },
     {
       id: 22,
@@ -250,18 +250,18 @@ let product = [
       del: " 2 700 00 đ",
       dataPrice: "1350000",
       price: "1 350 000",
-      link: "./../product/product22.html"
+      link: "./../../product/product22.html"
     },
     {
       id: 23,
-      brand: "Asics",
+      brand: "asics",
       img:
         "https://runningstore.vn/wp-content/uploads/2022/12/0540ac161f52c70c9e43-300x300.jpg",
       name: "Asics Hyper speed 2 – Safty yellow/White – 1011B495-750",
       del: " 2 700 00 đ",
       dataPrice: "2100000",
       price: "2 100 000",
-      link: "./../product/product23.html"
+      link: "./../../product/product23.html"
     },
     {
       id: 24,
@@ -273,7 +273,7 @@ let product = [
       del: " 3 500 00 đ",
       dataPrice: "2690000",
       price: "2 690 000",
-      link: "./../product/product24.html"
+      link: "./../../product/product24.html"
     },
     {
       id: 25,
@@ -285,6 +285,134 @@ let product = [
       del: " 4 700 00 đ",
       dataPrice: "2450000",
       price: "2 1450 000",
-      link: "./../product/product25.html"
+      link: "./../../product/product25.html"
     }
+    
+    
+    
+    ,
+    {
+      id: 26,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2023/04/z4245398283495_32d0532a6ace3670463d84c063c7c1dd-150x150.jpg",
+      name:
+        "Adidas Galaxy 6 –  Halo Silver / Carbon / Cloud White – GW4140 – xám",
+      del: " 1 700 000 đ",
+      dataPrice: "1200000",
+      price: "1 200 000",
+      link: "./../../product/product26.html"
+    },
+    {
+      id: 27,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2022/03/91f7480d87f14baf12e0-100x100.jpg",
+      name:
+        "Adidas PureBoost 21 – Cloud White / Core Black / Solar Red – GY5099 – màu trắng",
+      del: " 3 500 000 đ",
+      dataPrice: "1750000",
+      price: "1 750 000",
+      link: "./../../product/product27.html"
+    },
+    {
+      id: 28,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2022/10/77c2c09f194ede10875f-300x300.jpg",
+      name:
+        "Adidas Duramo SL – Core Black / Core Black / Grey Six – FY8113 màu đen",
+      del: " 1 800 000 đ",
+      dataPrice: "1200000",
+      price: "1 200 000",
+      link: "./../../product/product27.html"
+    },
+    {
+      id: 29,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2022/10/d4c36eaf3292f5ccac83-300x300.jpg",
+      name:
+        "Adidas Galaxy 4 – Grey Five / Grey Five / Grey Five – F36162 – xám",
+      del: " 1 700 000 đ",
+      dataPrice: "1200000",
+      price: "1 200 000",
+      link: "./../../product/product29.html"
+    },
+    {
+      id: 30,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2022/10/7027ed7c084ecf10965f-430x430.jpg",
+      name:
+        "Adidas Duramo 9 – Core Black / Core White / Core Black – BB7066 – đen",
+      del: " 1 700 000 đ",
+      dataPrice: "1200000",
+      price: "1 100 000",
+      link: "./../../product/product30.html"
+    },
+    {
+      id: 31,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2022/10/aa54b10e543c9362ca2d-300x300.jpg",
+      name:
+        "Adidas Duramo 9 – Tech Indigo / Legend Ink / Footwear White – EG8661 tím than",
+      del: " 1 700 000 đ",
+      dataPrice: "1200000",
+      price: "1 100 000",
+      link: "./../../product/product31.html"
+    },
+    {
+      id: 32,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2022/11/6845f9b9c88b0fd5569a-300x300.jpg",
+      name:
+        "Adidas Ultraboost 21 Triple Black – Core Black – FY0306 màu đen",
+      del: " 5 000 000 đ",
+      dataPrice: "2750000",
+      price: "2 750 000",
+      link: "./../../product/product26.html"
+    },
+    {
+      id: 33,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2022/07/c8700de33933fb6da222-300x300.jpg",
+      name:
+        "Adidas Solarboost 3 – Halo Silver / Signal Green / Sonic – S42995",
+      del: " 3 800 000 đ",
+      dataPrice: "1600000",
+      price: "1 600 000",
+      link: "./../../product/product33.html"
+    },
+    {
+      id: 34,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2022/03/4ac2c26e84ad4bf312bc-300x300.jpg",
+      name:
+        "Adidas Ultraboost 21 –  Vivid Red / Solar Red / Core Black – FY0387",
+      del: " 5 000 000 đ",
+      dataPrice: "2590000",
+      price: "2 590 000",
+      link: "./../../product/product34.html"
+    },
+    {
+      id: 35,
+      brand: "adidas",
+      img:
+        "https://runningstore.vn/wp-content/uploads/2021/12/DSC02101_1_1866-300x300.jpg",
+      name:
+        "Adiddas Adizero Boston 10 W – Cloud White / Core Black / Solar Red – FY4080",
+      del: " 2 900 000 đ",
+      dataPrice: "2050000",
+      price: "2 050 000",
+      link: "./../../product/product35.html"
+    }
+
+
+
+    
   ];

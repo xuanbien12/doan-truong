@@ -169,7 +169,7 @@ html {
       bottom: 100%;
     }
   }
-  .c {
+  .btn-login {
     display: flex;
     justify-content: space-between;
   }
