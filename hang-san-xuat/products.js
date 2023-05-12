@@ -8,7 +8,7 @@ let product = [
       del: "3 519 00 đ",
       dataPrice: "2400000",
       price: "2 400 00 đ",
-      link: "./../product/product1.html"
+      link: "./../../product/product1.html"
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ let product = [
       del: "3 519 00 đ",
       dataPrice: "2250000",
       price: "2 250 00 đ",
-      link: "./../product/product2.html"
+      link: "./../../product/product2.html"
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ let product = [
       del: "4 000 00 đ",
       dataPrice: "2650000",
       price: "2 650 000 đ",
-      link: "./../product/product3.html"
+      link: "./../../product/product3.html"
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ let product = [
       del: "4 000 00 đ",
       dataPrice: "2800000",
       price: "2 800 000 đ",
-      link: "./../product/product4.html"
+      link: "./../../product/product4.html"
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ let product = [
       del: "3 100 00 đ",
       dataPrice: "1700000",
       price: "1 700 000 đ",
-      link: "./../product/product5.html"
+      link: "./../../product/product5.html"
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ let product = [
       del: "3 100 00 đ",
       dataPrice: "1700000",
       price: "1 700 000 đ",
-      link: "./../product/product6.html"
+      link: "./../../product/product6.html"
     },
     {
       id: 7,
@@ -76,7 +76,7 @@ let product = [
       del: "2 700 00 đ",
       dataPrice: "2100000",
       price: "2 100 000 đ",
-      link: "./../product/product7.html"
+      link: "./../../product/product7.html"
     },
     {
       id: 8,
@@ -88,7 +88,7 @@ let product = [
       del: "2 950 00 đ",
       dataPrice: "1950000",
       price: "1 950 000đ",
-      link: "./../product/product8.html"
+      link: "./../../product/product8.html"
     },
     {
       id: 9,
@@ -99,7 +99,7 @@ let product = [
       del: "2 400 00 đ",
       dataPrice: "1500000",
       price: "1 500 000đ",
-      link: "./../product/product9.html"
+      link: "./../../product/product9.html"
     },
     {
       id: 10,
@@ -111,7 +111,7 @@ let product = [
       del: "2 950 00 đ",
       dataPrice: "1650000",
       price: "1 650 000đ",
-      link: "./../product/product10.html"
+      link: "./../../product/product10.html"
     },
     {
       id: 11,
@@ -123,7 +123,7 @@ let product = [
       del: "3 519 00 đ",
       dataPrice: "2530000",
       price: "2 530 000đ",
-      link: "./../product/product11.html"
+      link: "./../../product/product11.html"
     },
     {
       id: 12,
@@ -135,7 +135,7 @@ let product = [
       del: "4 700 00 đ",
       dataPrice: "2700000",
       price: "2 700 000đ",
-      link: "./../product/product12.html"
+      link: "./../../product/product12.html"
     },
     {
       id: 13,
@@ -146,7 +146,7 @@ let product = [
       del: "4 900 00 đ",
       dataPrice: "2750000",
       price: "2 750 000đ",
-      link: "./../product/product13.html"
+      link: "./../../product/product13.html"
     },
     {
       id: 14,
@@ -157,7 +157,7 @@ let product = [
       del: "3 100 00 đ",
       dataPrice: "1950000",
       price: "1 950 000đ",
-      link: "./../product/product14.html"
+      link: "./../../product/product14.html"
     },
     {
       id: 15,
@@ -168,7 +168,7 @@ let product = [
       del: "1 800 00 đ",
       dataPrice: "1400000",
       price: "1 400 000đ",
-      link: "./../product/product15.html"
+      link: "./../../product/product15.html"
     },
     {
       id: 16,
@@ -180,7 +180,7 @@ let product = [
       del: " 4 000 00 đ",
       dataPrice: "1950000",
       price: "1 950 000đ",
-      link: "./../product/product16.html"
+      link: "./../../product/product16.html"
     },
     {
       id: 17,
@@ -191,7 +191,7 @@ let product = [
       del: " 1 400 00 đ",
       dataPrice: "1200000",
       price: "1 200 000đ",
-      link: "./../product/product17.html"
+      link: "./../../product/product17.html"
     },
     {
       id: 18,
@@ -202,7 +202,7 @@ let product = [
       del: " 4 900 00 đ",
       dataPrice: "3990000",
       price: "3 990 000đ",
-      link: "./../product/product18.html"
+      link: "./../../product/product18.html"
     },
     {
       id: 19,
@@ -214,7 +214,7 @@ let product = [
       del: " 4 700 00 đ",
       dataPrice: "2750000",
       price: "2 750 000đ",
-      link: "./../product/product19.html"
+      link: "./../../product/product19.html"
     },
     {
       id: 20,
@@ -226,7 +226,7 @@ let product = [
       del: " 3 519 00 đ",
       dataPrice: "2750000",
       price: "2 750 000đ",
-      link: "./../product/product20.html"
+      link: "./../../product/product20.html"
     },
     {
       id: 21,
@@ -238,7 +238,7 @@ let product = [
       del: " 7 990 00 đ",
       dataPrice: "4490000",
       price: "4 490 000đ",
-      link: "./../product/product21.html"
+      link: "./../../product/product21.html"
     },
     {
       id: 22,
@@ -250,7 +250,7 @@ let product = [
       del: " 2 700 00 đ",
       dataPrice: "1350000",
       price: "1 350 000",
-      link: "./../product/product22.html"
+      link: "./../../product/product22.html"
     },
     {
       id: 23,
@@ -261,7 +261,7 @@ let product = [
       del: " 2 700 00 đ",
       dataPrice: "2100000",
       price: "2 100 000",
-      link: "./../product/product23.html"
+      link: "./../../product/product23.html"
     },
     {
       id: 24,
@@ -273,7 +273,7 @@ let product = [
       del: " 3 500 00 đ",
       dataPrice: "2690000",
       price: "2 690 000",
-      link: "./../product/product24.html"
+      link: "./../../product/product24.html"
     },
     {
       id: 25,
@@ -285,7 +285,7 @@ let product = [
       del: " 4 700 00 đ",
       dataPrice: "2450000",
       price: "2 1450 000",
-      link: "./../product/product25.html"
+      link: "./../../product/product25.html"
     }
     
     
@@ -301,7 +301,7 @@ let product = [
       del: " 1 700 000 đ",
       dataPrice: "1200000",
       price: "1 200 000",
-      link: "./../product/product26.html"
+      link: "./../../product/product26.html"
     },
     {
       id: 27,
@@ -313,7 +313,7 @@ let product = [
       del: " 3 500 000 đ",
       dataPrice: "1750000",
       price: "1 750 000",
-      link: "./../product/product27.html"
+      link: "./../../product/product27.html"
     },
     {
       id: 28,
@@ -325,7 +325,7 @@ let product = [
       del: " 1 800 000 đ",
       dataPrice: "1200000",
       price: "1 200 000",
-      link: "./../product/product27.html"
+      link: "./../../product/product27.html"
     },
     {
       id: 29,
@@ -337,7 +337,7 @@ let product = [
       del: " 1 700 000 đ",
       dataPrice: "1200000",
       price: "1 200 000",
-      link: "./../product/product29.html"
+      link: "./../../product/product29.html"
     },
     {
       id: 30,
@@ -349,7 +349,7 @@ let product = [
       del: " 1 700 000 đ",
       dataPrice: "1200000",
       price: "1 100 000",
-      link: "./../product/product30.html"
+      link: "./../../product/product30.html"
     },
     {
       id: 31,
@@ -361,7 +361,7 @@ let product = [
       del: " 1 700 000 đ",
       dataPrice: "1200000",
       price: "1 100 000",
-      link: "./../product/product31.html"
+      link: "./../../product/product31.html"
     },
     {
       id: 32,
@@ -373,7 +373,7 @@ let product = [
       del: " 5 000 000 đ",
       dataPrice: "2750000",
       price: "2 750 000",
-      link: "./../product/product26.html"
+      link: "./../../product/product26.html"
     },
     {
       id: 33,
@@ -385,7 +385,7 @@ let product = [
       del: " 3 800 000 đ",
       dataPrice: "1600000",
       price: "1 600 000",
-      link: "./../product/product33.html"
+      link: "./../../product/product33.html"
     },
     {
       id: 34,
@@ -397,7 +397,7 @@ let product = [
       del: " 5 000 000 đ",
       dataPrice: "2590000",
       price: "2 590 000",
-      link: "./../product/product34.html"
+      link: "./../../product/product34.html"
     },
     {
       id: 35,
@@ -409,7 +409,7 @@ let product = [
       del: " 2 900 000 đ",
       dataPrice: "2050000",
       price: "2 050 000",
-      link: "./../product/product35.html"
+      link: "./../../product/product35.html"
     }
 
 
