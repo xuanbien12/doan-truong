@@ -57,20 +57,24 @@ $(document).ready(function () {
         if (name && email && password && passwordConfim) {
             if (!checkName) {
 
-                if (password === passwordConfim) {
-                    $(".get-name").val("")
-                    $(".get-email").val("")
-                    $(".get-password").val("")
-                    $(".get-tel").val("")
-                    $(".get-password-confirm").val("")
-                    login.push(user)
-                    localStorage.setItem("login", JSON.stringify(login))
-                    $(".login").show()
-                    $(".register").hide()
-                    alert("Đăng ký thành công tài khoản")
-                } else {
-
-                    alert("Mật khẩu không trùng khớp")
+                if(email.includes("@gmail.com")){
+                    if (password === passwordConfim) {
+                        $(".get-name").val("")
+                        $(".get-email").val("")
+                        $(".get-password").val("")
+                        $(".get-tel").val("")
+                        $(".get-password-confirm").val("")
+                        login.push(user)
+                        localStorage.setItem("login", JSON.stringify(login))
+                        $(".login").show()
+                        $(".register").hide()
+                        alert("Đăng ký thành công tài khoản")
+                    } else {
+    
+                        alert("Mật khẩu không trùng khớp")
+                    }
+                }else {
+                    alert("Gmail không hợp lệ")
                 }
             } else {
                 alert("Tài khoản đã tồn tại")
