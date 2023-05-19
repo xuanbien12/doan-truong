@@ -373,14 +373,13 @@ html {
 .setting {
     display: none;
     position: absolute;
-    padding:  20px;
+    padding:  25px;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 250px;
     z-index: 999;
     border-radius: 10px;
     background-color: #fff;
-    bottom: -210px;
+    top: 125%;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -397,15 +396,20 @@ html {
 .setting ul li {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 1px solid #c8ccd2;
+    border: 1px solid #c8ccd2;
     padding:  15px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 10px;
+}
 
-}
-.setting ul li:first-child {
-    padding: 0 0 15px 0;
-}
-.setting span {
-    margin-left: 20px;
+.set-logout a {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .setting ul li svg {
     font-size: 20px;
@@ -433,4 +437,12 @@ html {
 }
 .permission:hover {
     color: #fff;
+}
+.setting  ul li:hover {
+    background-color: #091f340a;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }

@@ -2,6 +2,17 @@ header {
     background-color: rgb(91, 57, 116);
     padding: 0 2rem;
 }
+.nav {
+    padding: 0 40px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-right-from-bracket {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
 .nav-title {
     display: flex;
     align-items: center;

@@ -17,6 +17,7 @@ $(document).ready(function(){
 //    e.preventDefault()
     $(".form-sigup").on('submit' , function(e) { 
         e.preventDefault()
+       
         const login = JSON.parse(localStorage.getItem("login") || "[]")
         const admin = JSON.parse(localStorage.getItem("admin") || "[]")
         const name = $(".get-name-sigup").val()
@@ -70,12 +71,17 @@ $(document).ready(function(){
         $("alert-phone-exists").hide()
         login.push(user)
         localStorage.setItem("login", JSON.stringify(login))
-        alert("đăng ký tài khoản thành công")
+        $(".notification").css("right","0")
+        setTimeout(function(){$(".notification").css("right","-30%") }, 3000);
         $(".get-name-sigup").val("")
         $(".get-phonenumber-sigup").val("")
         $(".get-password-sigup").val("")
         $(".get-password2-sigup").val("")
     })
+
+    
+
+
     // lấy các tài khoản xuống
     const login = JSON.parse(localStorage.getItem("login") || "[]")
     const admin = JSON.parse(localStorage.getItem("admin") || "[]")
@@ -87,6 +93,7 @@ $(document).ready(function(){
     // đăng nhập
     $(".form-login").on("submit" , function(e){
         e.preventDefault()
+        
         const checkName = $(".check-name-login").val()
         const checkPassword = $('.check-password-login').val()
         if( !checkName || !checkPassword) {
@@ -96,7 +103,9 @@ $(document).ready(function(){
         const check = loginMain.find((user) => user.name === checkName && user.password === checkPassword  || user.phoneNumber === checkName && user.password === checkPassword )
         if(check) {
         localStorage.setItem("loginMain", JSON.stringify(check))
-        window.location.href = "./../../index.html"
+        $(".notification-login").css("right","0")
+        setTimeout(function(){$(".notification-login").css("right","-30%") }, 3000);
+        setTimeout(function(){window.location.href = "./../../index.html" }, 4000);
         return
        } else {
         $(".alert-show").show()
@@ -104,6 +113,4 @@ $(document).ready(function(){
         
        
     })
-    
-    
 })

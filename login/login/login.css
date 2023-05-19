@@ -14,7 +14,6 @@ header {
     padding: 0 50px;
 }
 .page-main {
-    
     min-height: 800px;
     max-height: 700px;
     display: flex;
@@ -188,4 +187,42 @@ input::-webkit-inner-spin-button {
 }
  input[type=number] {
     -moz-appearance: textfield;
-  }
+}
+.page {
+    position: relative;
+    overflow: hidden;
+}
+.notification-inner {
+    display: flex;
+    align-items: center ;
+}
+.notification , .notification-login {
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(202, 200, 200);
+    background-color: #fff;
+    position: absolute;
+    font-size: 18px;
+    top: 15%;
+    right: -30%;
+    border-radius: 15px 0 0 15px    ;
+    -webkit-border-radius: 15px 0 0 15px    ;
+    -moz-border-radius: 15px 0 0 15px    ;
+    -ms-border-radius: 15px 0 0 15px    ;
+    -o-border-radius: 15px 0 0 15px    ;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    
+}
+
+.fa-circle-check {
+    margin-right: 10px;
+    font-size: 20px;
+    color: red;
+}
