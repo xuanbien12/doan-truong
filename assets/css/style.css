@@ -429,5 +429,8 @@ html {
 }
 .show-permission:hover {
     background-color: red;
+   
+}
+.permission:hover {
     color: #fff;
 }
