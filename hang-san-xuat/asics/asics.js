@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    
-    const newProductAsics = product.filter((item) => {
+    var productsInLocal = JSON.parse(localStorage.getItem('productsAdmin') || '[]')
+    const newProductAsics = productsInLocal.filter((item) => {
         if(item.brand == "asics") {
             return true
         }
@@ -8,8 +8,10 @@ $(document).ready(function(){
 
   
 
-    function rederProducts() {
-        let newProduct = newProductAsics.map((item) => {
+    function rederProducts(product) {
+        let newProduct = product.map((item) => {
+            let price = +item.price
+            let del = +item.del
             return(
                 `
              <li class="product-item">
@@ -18,8 +20,8 @@ $(document).ready(function(){
                                          <img class="product-item-img" src="${item.img}" alt="">
                                          <h2 class="product-item-title">${item.name}</h2>
                                          <span class="price">
-                                             <del>${item.del}</del>
-                                             <span class="price-product" data-price="${item.dataPrice}">${item.price}</span>
+                                             <del>${del.toLocaleString()}đ</del>
+                                             <span class="price-product" data-price="${price.toLocaleString()}">${price.toLocaleString()}đ</span>
                                          </span>
                                          <div class="sale">sale</div>
                                      </a>
@@ -29,7 +31,8 @@ $(document).ready(function(){
         })
      $(".products").html(newProduct)
     }
-    rederProducts()
+    
+    rederProducts(newProductAsics)
     $("#check").change(function () {
         if ($(this).val() === 'btn-price') {
             newProductAsics.sort((a, b) => {

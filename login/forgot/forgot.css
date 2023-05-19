@@ -1,0 +1,15 @@
+
+.form {
+    position: relative;
+}
+.fa-arrow-left {
+    position: absolute;
+    font-size: 25px;
+    color: red;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+}
+.title-form {
+    text-align: center;
+}

@@ -39,30 +39,12 @@ $(document).ready(function () {
     })
 
   
-    // let newProduct = []
-    // product.map((item) => {
-    //     newProduct.push(
-    //         `
-    //     <li class="product-item">
-    //                             <a href="${item.link}">
-    //                                 <span class="brand">${item.brand}</span>
-    //                                 <img class="product-item-img" src="${item.img}" alt="">
-    //                                 <h2 class="product-item-title">${item.name}</h2>
-    //                                 <span class="price">
-    //                                     <del>${item.del}</del>
-    //                                     <span class="price-product" data-price="${item.dataPrice}">${item.price}</span>
-    //                                 </span>
-    //                                 <div class="sale">sale</div>
-    //                             </a>
-    //     </li>
-    //     `
-    //     )
-    // })
-
-    // $(".products").html(newProduct)
+    var productsInLocal = JSON.parse(localStorage.getItem('productsAdmin'))
     
-    function rederProducts() {
+    function rederProducts(product) {
         let newProduct = product.map((item) => {
+            let price = +item.price
+            let del = +item.del
             return(
                 `
              <li class="product-item">
@@ -71,8 +53,8 @@ $(document).ready(function () {
                                          <img class="product-item-img" src="${item.img}" alt="">
                                          <h2 class="product-item-title">${item.name}</h2>
                                          <span class="price">
-                                             <del>${item.del}</del>
-                                             <span class="price-product" data-price="${item.dataPrice}">${item.price}</span>
+                                             <del>${del.toLocaleString()} đ</del>
+                                             <span class="price-product" data-price="${price.toLocaleString()}">${price.toLocaleString()} đ</span>
                                          </span>
                                          <div class="sale">sale</div>
                                      </a>
@@ -80,22 +62,24 @@ $(document).ready(function () {
              `
             )
         })
-     $(".products").html(newProduct)
+      
+        $(".products").html(newProduct)
     }
-    rederProducts()
+
+    rederProducts(productsInLocal)
     $("#check").change(function () {
         if ($(this).val() === 'btn-price') {
-            product.sort((a, b) => {
+            newProduct.sort((a, b) => {
                 return a.dataPrice - b.dataPrice
             })
             rederProducts()    
         }else if ($(this).val() === 'price-desc') {
-            product.sort((a, b) => {
+            newProduct.sort((a, b) => {
                 return b.dataPrice - a.dataPrice
             })
             rederProducts()
         }else {
-            product.sort((a, b) => {
+            newProduct.sort((a, b) => {
                 return a.id - b.id
                 
             })
@@ -107,13 +91,16 @@ $(document).ready(function () {
     })
 
 
-
-
-
-
-
-
-
-
+let show = 20
+$(".btn-show-products").on("click" ,function(){
+    const products = $(".product-item")
+    for(let i = show ; i < show + 10 && i < products.length ; i++){
+        products[i].style.display= 'block'
+    }
+    show += 10
+    if(show >= products.length){
+        $(".btn-show-products").css("display","none")
+    }
+})
 
 })

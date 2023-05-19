@@ -18,7 +18,6 @@ $(document).ready(function () {
         
         let totalPrice = 0;
         let html = item.map((item) => {
-            
             let price = +item.priceNumber
             let quantitys = item.quantity
             totalPrice = price * quantitys;
@@ -40,11 +39,11 @@ $(document).ready(function () {
         }) 
         $("#myCart").html(html)  
     }
-    function a (){{
+    // function a (){{
         
-    }}
+    // }}
     $(".cart-number").on("keyup", function () {
-        
+        console.log("aa")
         let number = $(this).val()
         let productId = $(this).data("id")
         const carts = productsInCart.find((item) => item.id == productId)

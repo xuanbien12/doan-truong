@@ -1,15 +1,17 @@
 $(document).ready(function(){
-    
-    const newProductNike = product.filter((item) => {
+    var productsInLocal = JSON.parse(localStorage.getItem('productsAdmin') || '[]')
+    const newProductNike = productsInLocal.filter((item) => {
         if(item.brand == "nike") {
             return true
         }
     })
-console.log(newProductNike)
+
   
 
-    function rederProducts() {
-        let newProduct = newProductNike.map((item) => {
+    function rederProducts(product) {
+        let newProductnike = product.map((item) => {
+            let price = +item.price
+            let del = +item.del
             return(
                 `
              <li class="product-item">
@@ -18,8 +20,8 @@ console.log(newProductNike)
                                          <img class="product-item-img" src="${item.img}" alt="">
                                          <h2 class="product-item-title">${item.name}</h2>
                                          <span class="price">
-                                             <del>${item.del}</del>
-                                             <span class="price-product" data-price="${item.dataPrice}">${item.price}</span>
+                                             <del>${del.toLocaleString()} đ</del>
+                                             <span class="price-product" data-price="${price.toLocaleString()}">${price.toLocaleString()}đ</span>
                                          </span>
                                          <div class="sale">sale</div>
                                      </a>
@@ -27,9 +29,10 @@ console.log(newProductNike)
              `
             )
         })
-     $(".products").html(newProduct)
+     $(".products").html(newProductnike)
     }
-    rederProducts()
+   
+    rederProducts(newProductNike)
     $("#check").change(function () {
         if ($(this).val() === 'btn-price') {
             newProductNike.sort((a, b) => {

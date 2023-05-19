@@ -56,7 +56,6 @@ $(document).ready(function () {
         }
         if (name && email && password && passwordConfim) {
             if (!checkName) {
-
                 if(email.includes("@gmail.com")){
                     if (password === passwordConfim) {
                         $(".get-name").val("")
