@@ -13,9 +13,9 @@ $(document).ready(function(){
    
 
    
-   
+   // lấy các thông tin ng dùng đăng ký
 //    e.preventDefault()
-    $(".form").on('submit' , function(e) { 
+    $(".form-sigup").on('submit' , function(e) { 
         e.preventDefault()
         const login = JSON.parse(localStorage.getItem("login") || "[]")
         const admin = JSON.parse(localStorage.getItem("admin") || "[]")
@@ -32,7 +32,6 @@ $(document).ready(function(){
             
             return
         }
-        console.log(phoneNumber.length)
         if(phoneNumber.length > 10  || phoneNumber.length < 10){
             $(".alert-phone").show()
             $(".alert").hide()
@@ -71,11 +70,40 @@ $(document).ready(function(){
         $("alert-phone-exists").hide()
         login.push(user)
         localStorage.setItem("login", JSON.stringify(login))
+        alert("đăng ký tài khoản thành công")
+        $(".get-name-sigup").val("")
+        $(".get-phonenumber-sigup").val("")
+        $(".get-password-sigup").val("")
+        $(".get-password2-sigup").val("")
     })
-
-
+    // lấy các tài khoản xuống
+    const login = JSON.parse(localStorage.getItem("login") || "[]")
+    const admin = JSON.parse(localStorage.getItem("admin") || "[]")
+    
+    const loginMain = [
+        ...login,
+        ...admin
+    ]
+    // đăng nhập
+    $(".form-login").on("submit" , function(e){
+        e.preventDefault()
+        const checkName = $(".check-name-login").val()
+        const checkPassword = $('.check-password-login').val()
+        if( !checkName || !checkPassword) {
+            $(".alert").show()
+            return
+        }
+        const check = loginMain.find((user) => user.name === checkName && user.password === checkPassword  || user.phoneNumber === checkName && user.password === checkPassword )
+        if(check) {
+        localStorage.setItem("loginMain", JSON.stringify(check))
+        window.location.href = "./../../index.html"
+        return
+       } else {
+        $(".alert-show").show()
+       }
         
-
- 
+       
+    })
+    
     
 })

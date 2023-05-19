@@ -43,7 +43,7 @@ $(document).ready(function () {
         
     // }}
     $(".cart-number").on("keyup", function () {
-        console.log("aa")
+       
         let number = $(this).val()
         let productId = $(this).data("id")
         const carts = productsInCart.find((item) => item.id == productId)
