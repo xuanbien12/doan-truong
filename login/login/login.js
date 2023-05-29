@@ -72,7 +72,10 @@ $(document).ready(function(){
         login.push(user)
         localStorage.setItem("login", JSON.stringify(login))
         $(".notification").css("right","0")
-        setTimeout(function(){$(".notification").css("right","-30%") }, 3000);
+        setTimeout(function(){$(".notification").css("right","-30%")
+        window.location.href ="./login.html"
+    }, 2000);
+        
         $(".get-name-sigup").val("")
         $(".get-phonenumber-sigup").val("")
         $(".get-password-sigup").val("")
@@ -104,8 +107,8 @@ $(document).ready(function(){
         if(check) {
         localStorage.setItem("loginMain", JSON.stringify(check))
         $(".notification-login").css("right","0")
-        setTimeout(function(){$(".notification-login").css("right","-30%") }, 3000);
-        setTimeout(function(){window.location.href = "./../../index.html" }, 4000);
+        setTimeout(function(){$(".notification-login").css("right","-30%") }, 2000);
+        setTimeout(function(){window.location.href = "./../../index.html" }, 2500);
         return
        } else {
         $(".alert-show").show()

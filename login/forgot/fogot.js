@@ -17,7 +17,6 @@ $(document).ready(function(){
         if(resultsCheck){
             $(".render-password").text(resultsCheck.password)
             setTimeout(function(){$(".show-password").show() }, 1000);
-            
             return
         }
         $(".show-password").hide()

@@ -407,12 +407,16 @@ html {
 }
 
 .set-logout a {
+    color: #404e67;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 .setting ul li svg {
     font-size: 20px;
+}
+.permission {
+    color: #404e67;
 }
 .show-permission {
     width: 200px;

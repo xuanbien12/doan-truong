@@ -21,7 +21,7 @@ $(document).ready(function(){
                                          <h2 class="product-item-title">${item.name}</h2>
                                          <span class="price">
                                              <del>${del.toLocaleString()} đ</del>
-                                             <span class="price-product" data-price="${price.toLocaleString()}">${price.toLocaleString()} đ</span>
+                                             <span class="price-product" data-price="${price}">${price.toLocaleString()} đ</span>
                                          </span>
                                          <div class="sale">sale</div>
                                      </a>
@@ -36,20 +36,20 @@ $(document).ready(function(){
     $("#check").change(function () {
         if ($(this).val() === 'btn-price') {
             newProductAdidas.sort((a, b) => {
-                return a.dataPrice - b.dataPrice
+                return a.price - b.price
             })
-            rederProducts()    
+            rederProducts(newProductAdidas)    
         }else if ($(this).val() === 'price-desc') {
             newProductAdidas.sort((a, b) => {
-                return b.dataPrice - a.dataPrice
+                return b.price - a.price
             })
-            rederProducts()
+            rederProducts(newProductAdidas)
         }else {
             newProductAdidas.sort((a, b) => {
                 return a.id - b.id
                 
             })
-            rederProducts()
+            rederProducts(newProductAdidas)
             
         }
         
