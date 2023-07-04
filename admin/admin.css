@@ -1,4 +1,4 @@
-header {
+.header {
     background-color: rgb(91, 57, 116);
     padding: 0 2rem;
 }
@@ -56,7 +56,10 @@ header {
     
     color: #fff;
 }
-
+.toolbars-item:hover {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
 .information {
     padding: 0 5rem;
 }
@@ -70,7 +73,7 @@ header {
 .table-th {
     border: 1px solid #ccc;
 }
-table, th, td{
+ th, td{
     border-top:1px solid #ccc;
     border-bottom:1px solid #ccc;
 }
@@ -96,10 +99,17 @@ thead tr td {
     min-width: 200px;
 
 }
+.edit {
+    display: inline;
+}
 .toolbars-user  a{
     font-size: 20px;
     color: red;
     
+}
+.toolbars-user  svg {
+    font-size: 20px;
+    color: red;
 }
 .toolbars-user svg {
     margin-left: 20px;

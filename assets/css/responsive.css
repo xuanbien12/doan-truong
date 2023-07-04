@@ -1,3 +1,19 @@
+@media(max-width :1300px){
+.show-user  {
+    display: none;
+
+}
+.st-user {
+    padding: 8px 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fa-caret-down {
+    margin-left: 0;
+}
+}
 @media(max-width :770px) {
     .message {
         display: block;

@@ -1,7 +1,7 @@
 $(document).ready(function () {
    
     var productsInCart = JSON.parse(localStorage.getItem('cart') || '[]')
-   
+  
     renderProduct(productsInCart)
 
     $(".btn-delete").on("click",function(){
@@ -29,19 +29,32 @@ $(document).ready(function () {
             <img style="width: 32px; height: 32px;" src="${item.img}" alt="">
         </td>
         <td class="product-name">
-            <a href="${item.linkProduct}">${item.name}</a>
+            <a href="./../product/product${item.id}.html">${item.name}</a>
             <p>Size: ${item.size}</p>
         </td>
         <td class="product-price"><span> <span class="price-c">${price.toLocaleString()}</span><span> đ</span></span></td>
-        <td class="product-quantity"><input data-id="${item.id}" class="cart-number" type="text" value="${item.quantity}"></td>
+        <td class="product-quantity"><input data-id="${item.id}" class="cart-number" type="text" value="${item.quantity}"> 
+            <span class="change-sl">
+                <span  class="up" data-id="${item.id}" ><i class="fa-solid fa-caret-up "></i></span>
+                <span  class="down" data-id="${item.id}"><i class="fa-solid fa-caret-down " ></i></span>
+            </span>
+       </td>
         <td class="product-subtotal"><span class="total-price">${totalPrice.toLocaleString()}</span><span> đ</span></td>
         </tr>`;
         }) 
         $("#myCart").html(html)  
-    }
-    // function a (){{
         
-    // }}
+    }
+
+    function totalPriceCart(item) {
+        let totalPrice = 0 ;
+        item.forEach(item => {
+            totalPrice += +item.priceNumber * item.quantity
+        })
+        $(".totals-price").text(totalPrice.toLocaleString())
+    }
+    totalPriceCart(productsInCart)
+   
     $(".cart-number").on("keyup", function () {
        
         let number = $(this).val()
@@ -50,9 +63,40 @@ $(document).ready(function () {
         carts.quantity = number
         
         renderProduct(productsInCart)
-        totalPriceCart($(".total-price"))
+        totalPriceCart(productsInCart)
         localStorage.setItem('cart', JSON.stringify(productsInCart))
+        
+
     })
+  
+    $(".up").on("click" , function(){
+        const id = $(this).data("id")
+        
+        const newElement = productsInCart.find(item => item.id == id)
+        newElement.quantity = +newElement.quantity +1
+        
+        renderProduct(productsInCart)
+        totalPriceCart(productsInCart)      
+        localStorage.setItem('cart', JSON.stringify(productsInCart)) 
+        setTimeout(function(){
+            window.location.href ="./cart.html"
+        },1000)
+    })
+    $(".down").on("click" , function(){
+        const id = $(this).data("id")
+        const newElement = productsInCart.find(item => item.id == id)
+        newElement.quantity = +newElement.quantity - 1
+        
+        renderProduct(productsInCart)
+        totalPriceCart(productsInCart)
+        localStorage.setItem('cart', JSON.stringify(productsInCart))
+        setTimeout(function(){
+            window.location.href ="./cart.html"
+        },1000)
+        
+        
+    })
+   
    
 // tính tiền khi user nhập số lượng
     // $(".cart-number").on("keyup", function () {
@@ -70,16 +114,17 @@ $(document).ready(function () {
 
 
 // Tính tổng số hàng trong cart
-function totalPriceCart(item) {
-    let totalPrice = 0
-    item.each(function(index ,elemet){
+// function totalPriceCart(item) {
+//     let totalPrice = 0
+//     item.foEach(function(index ,elemet){
     
-        const a = $(elemet).text().replace(/,/g, '');
-        totalPrice += +a
-   })
-   $(".totals-price").text(totalPrice.toLocaleString())
-}
-totalPriceCart($(".total-price"))
+//         const a = $(index).text().replace(/,/g, '');
+//         totalPrice += +a
+//    })
+//    $(".totals-price").text(totalPrice.toLocaleString())
+// }
+
+// totalPriceCart(productsInCart)
 
 
 // tính độ dài của cart

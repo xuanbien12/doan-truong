@@ -113,7 +113,7 @@
     line-height: 1.5em;
 }
 .shop-table td {
-    padding: 10px 15px;
+    padding: 25px;
     border-top: 1px solid rgba(0,0,0,.1);
 }
 .product-quantity input {
@@ -122,6 +122,10 @@
     border-radius: 3px;
     width: 5em;
     text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 .product-name a {
     color: #000;
@@ -196,6 +200,20 @@
 .c a {
     cursor: pointer;
 }
+.navbar-b-inner {
+    padding: 15px 0;
+}
+.product-quantity {
+    display: flex;
+}
+.change-sl {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
 @media(max-width :990px) {
     .body-inner {
         flex-direction: column;

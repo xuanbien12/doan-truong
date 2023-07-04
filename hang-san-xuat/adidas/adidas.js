@@ -12,10 +12,11 @@ $(document).ready(function(){
         let newProduct = product.map((item) => {
             let price = +item.price
             let del = +item.del
+            const a = item.link || "./../../product/product36.html"
             return(
                 `
-             <li class="product-item">
-                                     <a href="${item.link}">
+             <li class="product-item" data-id="${item.id}">
+                                     <a href="${a}" >
                                          <span class="brand">${item.brand}</span>
                                          <img class="product-item-img" src="${item.img}" alt="">
                                          <h2 class="product-item-title">${item.name}</h2>
@@ -30,6 +31,11 @@ $(document).ready(function(){
             )
         })
      $(".products").html(newProduct)
+     $(".product-item").on("click" , function(){
+       
+        const a = $(this).data("id")
+        localStorage.setItem("id" ,JSON.stringify(a))
+    })
     }
    
     rederProducts(newProductAdidas)
@@ -52,7 +58,5 @@ $(document).ready(function(){
             rederProducts(newProductAdidas)
             
         }
-        
-    
     })
 })
